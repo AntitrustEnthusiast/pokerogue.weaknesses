@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Emerald";
+  src: url("emerald.ttf") format("truetype");
+}
+
+body {
+  font-family: Emerald;
+  background-color: #101820;
+  background-image: linear-gradient(#303841 2px, transparent 2px),
+    linear-gradient(90deg, #303841 2px, transparent 2px),
+    linear-gradient(#182028 1px, transparent 1px),
+    linear-gradient(90deg, #182028 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+div {
+  border: 0px solid black;
+  text-align: center;
+}
+canvas {
+  margin-right: 0.5em;
+}
+.flexbox {
+  display: flex;
+}
+.flexchild {
+  flex: 1;
+}
+.pokemon {
+  min-width: 20em;
+  max-width: 40em;
+  margin-top: 2ex;
+  padding: 1em;
+  box-shadow:
+    inset 0 0 0 4px #006088,
+    inset 0 0 0 8px #88f8f0,
+    inset 0 0 0 12px #006088;
+  background-color: #0a3c5b;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  line-height: 100px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sprite {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  object-fit: cover;
+}
+
+.type-sprites {
+  flex-direction: column;
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 5px;
+  min-height: 80px;
+}
+
+.type-sprite {
+  max-height: 40px;
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 24pt;
+  min-height: 80px;
+  margin: 0 5px;
+}
+
+.type {
+  font-size: 18pt;
+  margin: 3pt;
+}
+
+.text {
+  font-family: Emerald;
+  color: #f8f8f8;
+  text-shadow: 0.0625em 0.0625em #707070;
+}
+
+.WATER { background-color: #6890f0; }
+.GROUND { background-color: #e0c068; }
+.ROCK { background-color: #b8a038; }
+.ELECTRIC { background-color: #f8d030; }
+.FIRE { background-color: #f08030; }
+.GRASS { background-color: #78c850; }
+.ICE { background-color: #98d8d8; }
+.STEEL { background-color: #b8b8d0; }
+.FAIRY { background-color: #e888c8; }
+.BUG { background-color: #a8b820; }
+.DARK { background-color: #705848; }
+.PSYCHIC { background-color: #f85888; }
+.FLYING { background-color: #a890f0; }
+.DRAGON { background-color: #7038f8; }
+.GHOST { background-color: #705898; }
+.POISON { background-color: #a040a0; }
+.FIGHTING { background-color: #c03028; }
+.STELLAR { background-color: #ffffff; }
+.NORMAL { background-color: #a8a878; }
+
+@keyframes pulse {
+  50% {
+    background-color: #ffffff;
+  }
+}
+.disabled {
+  animation: pulse 1s;
+  animation-iteration-count: infinite;
+}
